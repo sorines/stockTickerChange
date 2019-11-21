@@ -10,9 +10,19 @@
     <p>Stock Ticker Change on links</p>
    </h1>
   <body>
-    <span><a href="http://www.google.com">Google</a></span> 
-    <span><a href="http://www.reddit.com">Reddit</a></span>
-    <span><a href="http://www.espn.com">ESPN</a></span>
+    <span><a href="http://www.google.com"> <p id="google">Google</P></a></span> 
+    <span><a href="http://www.reddit.com"><p>Reddit</p></a></span>
+    <span><a href="http://www.espn.com"><p>ESPN</p></a></span>
+
+        
+
+    <script>
+            function myFunction() {
+              var str = document.getElementById("google").innerHTML; 
+              var res = str.replace("Google, GOOGL");
+              document.getElementById("google").innerHTML = res;
+            }
+            </script>
 
 </body>
 
